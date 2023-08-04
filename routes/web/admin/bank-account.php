@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BankAccountController;
+use App\Http\Controllers\Admin\BankAccountController;
 
 Route::post('create-bank-account',[BankAccountController::class,'create_bank_account'])->name('create.bank-account');
 Route::get('manage-bank-account',[BankAccountController::class,'manage_bank_account'])->name('manage.bank-account');

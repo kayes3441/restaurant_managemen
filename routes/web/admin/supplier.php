@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\Admin\SupplierController;
 
 Route::post('create-supplier',[SupplierController::class,'create_supplier'])->name('create.supplier');
 Route::get('manage-supplier',[SupplierController::class,'manage_supplier'])->name('manage.supplier');

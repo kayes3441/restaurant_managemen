@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PurchaseReportController;
+use App\Http\Controllers\Admin\PurchaseReportController;
 Route::get('purchase_report_page',[PurchaseReportController::class,'page'])->name('purchase.report.page');
 Route::any('get-purchase-info-by-date',[PurchaseReportController::class,'getPurchaseInfo'])->name('get.purchase.info.by.date');
 Route::any('credit-purchase-invoice/{id}',[PurchaseReportController::class,'creditPurchaseInvoice'])->name('credit.purchase.invoice');

@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SaleController;
+use App\Http\Controllers\Admin\SaleController;
 
 Route::get('add-sale',[SaleController::class,'addSale'])->name('add.sale');
 Route::post('cart',[SaleController::class,'cart'])->name('cart');

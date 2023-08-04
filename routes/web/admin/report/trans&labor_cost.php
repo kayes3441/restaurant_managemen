@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TransAndlaborCostReportController;
+use App\Http\Controllers\Admin\TransAndlaborCostReportController;
 
 Route::get('trans-and-labor-cost-page',[TransAndlaborCostReportController::class,'page'])->name('trans.and.labor.cost.page');
 Route::any('trans-and-labor-cost-by-date',[TransAndlaborCostReportController::class,'cost_by_date'])->name('trans.and.labor.cost.by.date');

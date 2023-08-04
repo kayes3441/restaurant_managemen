@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FoodController;
+use App\Http\Controllers\Admin\FoodController;
 
 Route::get('manage-food',[FoodController::class,'manageFood'])->name('manage.food');
 //Route::post('create-food',[FoodController::class,'create'])->name('create.food');
@@ -9,15 +9,15 @@ Route::any('delete-food',[FoodController::class,'delete'])->name('delete.food');
 
 
 Route::any('single-food-recipe/{id}',[
-    'uses'=>'App\Http\Controllers\FoodController@singleFoodRecipe',
+    'uses'=>'App\Http\Controllers\Admin\FoodController@singleFoodRecipe',
     'as'=>'single-food-recipe'
 ]);
 
 Route::any('delete-food',[
-    'uses'=>'App\Http\Controllers\FoodController@deleteFood',
+    'uses'=>'App\Http\Controllers\Admin\FoodController@deleteFood',
     'as'=>'delete-food'
 ]);
 Route::any('status-food',[
-    'uses'=>'App\Http\Controllers\FoodController@statusFood',
+    'uses'=>'App\Http\Controllers\Admin\FoodController@statusFood',
     'as'=>'status-food'
 ]);

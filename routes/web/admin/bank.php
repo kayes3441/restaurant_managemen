@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BankController;
+use App\Http\Controllers\Admin\BankController;
 
 Route::get('add-bank',[BankController::class,'add_bank'])->name('add.bank');
 Route::post('create-bank',[BankController::class,'create_bank'])->name('create.bank');

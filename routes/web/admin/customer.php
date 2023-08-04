@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\Admin\CustomerController;
 
 Route::post('create-customer',[CustomerController::class,'create_customer'])->name('create.customer');
 Route::get('manage-customer',[CustomerController::class,'manage_customer'])->name('manage.customer');

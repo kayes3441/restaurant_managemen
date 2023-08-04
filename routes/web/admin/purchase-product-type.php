@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PurchaseProductTypeController;
+use App\Http\Controllers\Admin\PurchaseProductTypeController;
 Route::post('create-product-type',[PurchaseProductTypeController::class,'create'])->name('create.product.type');
 Route::get('manage',[PurchaseProductTypeController::class,'manage'])->name('manage');
 Route::get('detail',[PurchaseProductTypeController::class,'detail'])->name('detail');

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Models\BankTransaction;
 use App\Models\Detail;
@@ -8,7 +8,7 @@ use App\Models\Purchase;
 use App\Models\ReceiveAndPay;
 use App\Models\Sale;
 use Illuminate\Http\Request;
-use App\Http\Controllers\CashBookController;
+use App\Http\Controllers\Admin\CashBookController;
 
 class BalanceSummaryController extends Controller
 {

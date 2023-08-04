@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PurchaseController;
+use App\Http\Controllers\Admin\PurchaseController;
 
 Route::get('add-purchase',[PurchaseController::class,'add_purchase'])->name('add.purchase');
 Route::get('manage-purchase',[PurchaseController::class,'manage_purchase'])->name('manage.purchase');

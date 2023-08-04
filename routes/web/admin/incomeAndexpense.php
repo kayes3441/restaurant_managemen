@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\IncomeAndExpenseController;
+use App\Http\Controllers\Admin\IncomeAndExpenseController;
 
 Route::get('income-and-expanse-page',[IncomeAndExpenseController::class,'page'])->name('income.and.expanse');
 

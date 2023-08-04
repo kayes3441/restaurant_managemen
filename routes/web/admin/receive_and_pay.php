@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ReceiveAndPayController;
+use App\Http\Controllers\Admin\ReceiveAndPayController;
 
 Route::get('receiveAndPay-page',[ReceiveAndPayController::class,'receiveAndPayPage'])->name('receiveAndPay.page');
 Route::any('get-customer',[ReceiveAndPayController::class,'customerId']);

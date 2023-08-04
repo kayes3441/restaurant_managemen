@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UnitController;
-use App\Http\Controllers\UnitConversionController;
+use App\Http\Controllers\Admin\UnitController;
+use App\Http\Controllers\Admin\UnitConversionController;
 Route::post('create-unit',[UnitController::class,'create_unit'])->name('create.unit');
 Route::get('manage-unit',[UnitController::class,'manage_unit'])->name('manage.unit');
 Route::post('update-unit',[UnitController::class,'update_unit'])->name('update.unit');
